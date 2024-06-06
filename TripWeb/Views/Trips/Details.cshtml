@@ -1,0 +1,80 @@
+﻿<link rel="stylesheet" href="~/css/details.css" asp-append-version="true" />
+@model Trips.ViewModel.TripDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+@* <div>
+    <h4 class="title mt-3">Details</h4>
+    <hr class="divider" />
+    <div class="details-row">
+        <div class="details-col-left fw-bold">
+            @Html.DisplayNameFor(model => model.Title)
+        </div>
+        <div class="details-col-right">
+            @Html.DisplayFor(model => model.Title)
+        </div>
+
+        <div class="details-col-left fw-bold">
+            @Html.DisplayNameFor(model => model.Description)
+        </div>
+        <div class="details-col-right">
+            @Html.DisplayFor(model => model.Description)
+        </div>
+
+
+        <div class="details-col-left fw-bold">
+            @Html.DisplayNameFor(model => model.Destination)
+        </div>
+        <div class="details-col-right">
+            @Html.DisplayFor(model => model.Destination)
+        </div>
+
+
+
+        <div class="details-col-left fw-bold">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </div>
+        <div class="details-col-right">
+            @Html.DisplayFor(model => model.StartDate)
+        </div>
+
+        <div class="details-col-left fw-bold">
+            @Html.DisplayNameFor(model => model.EndDate)
+        </div>
+        <div class="details-col-right">
+            @Html.DisplayFor(model => model.EndDate)
+        </div>
+
+
+    </div>
+</div>
+ *@
+
+
+ <div>
+    <p>Title: @Model.Title</p>
+    <p>Price: @Model.Price</p>
+    <p>Start Date: @Model.StartDate</p>
+    <p>End date: @Model.EndDate</p>
+    <p>Location: @Model.Location</p>
+    <p>Description: @Model.Description</p>
+    <p>Destination: @Model.Destination</p>
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+@* <a class="update-btn btn" asp-action="Update" asp-controller="Trips" asp-route-tripId="@Model.tripId">Update</a> *@
+<div class="back-link">
+    <a asp-action="Index" asp-controller="Home">Back to List</a>
+</div>

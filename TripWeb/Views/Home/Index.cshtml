@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Trips.Models.Trip>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<p>
+    <a class="btn btn-primary" asp-action="Create" asp-controller="Trips">Create</a>
+
+</p>
+<ul class="list-group">
+    @foreach (var trip in Model)
+    {
+        <li class="list-group-item">
+            <div style="display: flex; align-items: center;">
+
+                <div class="col-4">
+                    <p class="d-flex justify-content-center align-items-center px-3" style="margin: 0;"> @Html.DisplayFor(model  => trip.Title)</p>
+                </div>
+
+                <div class="col-8">
+                    <a class="btn btn-details" asp-action="Details" asp-controller="Trips" asp-route-tripId="@trip.tripId"> Details</a>
+                    <a class="btn btn-delete" asp-action="Delete" asp-controller="Trips" asp-route-tripId="@trip.tripId">Delete</a>
+                </div>
+            </div>
+        </li>
+    }
+
+</ul>
+

@@ -1,0 +1,92 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+.img-details {
+    width: auto;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.container1 h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+    
+.zdj1 {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.zdj2 {
+    margin-top: 15em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.btn-details {
+    background: #419dff;
+    color: white;
+}
+
+.btn{
+    border-radius:20px;
+}
+.btn-delete {
+    background:red;
+    color:white;
+}
+.update-btn
+{
+    background:#4cff00;
+
+}
+.list-group-item
+{
+    border:none;
+    padding-bottom:15px;
+    padding-top:15px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+}
