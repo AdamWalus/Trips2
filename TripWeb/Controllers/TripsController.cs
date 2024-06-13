@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
@@ -27,7 +28,7 @@ namespace Trips.Controllers
             _mapper = mapper;
 
         }
-
+        [Authorize (Roles="admin")]
         [HttpGet]
         public ActionResult Create()
         {

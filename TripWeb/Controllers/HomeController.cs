@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using Trips.Data;
@@ -9,6 +10,7 @@ using Trips.ViewModel;
 
 namespace Trips.Controllers
 {
+    [Authorize]
 	public class HomeController : Controller
 	{
        
